@@ -41,7 +41,7 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontos_turisticos2);
 
-    // Densidade, PIB per capita e Super Poder da segunda carta
+    // Densidades e PIB per capita
     densidade1 = populacao1 / area1;
     densidade2 = populacao2 / area2;
     pib_per_capita1 = (pib1 * 1000000000) / populacao1;
@@ -67,7 +67,7 @@ int main() {
     printf("Carta 1 - %s (%s): %d\n", cidade1, estado1, populacao1);
     printf("Carta 2 - %s (%s): %d\n", cidade2, estado2, populacao2);
 
-    // Se precisar trocar a compração, só mudar a variável. Mudar também o atributo no trecho anterior
+    // Se precisar trocar a comparação, só mudar a variável. Mudar também o atributo no trecho anterior
     if (populacao1 > populacao2) {
         printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
     } else if (populacao2 > populacao1) {
